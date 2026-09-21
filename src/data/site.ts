@@ -4,6 +4,7 @@ export type MenuCategory =
   | "Taco Salad"
   | "Sopas"
   | "Quesadillas"
+  | "Fajitas"
   | "Tacos"
   | "Drinks"
   | "Desserts"
@@ -118,7 +119,7 @@ export const menuFavorites: MenuFavorite[] = [
   },
   {
     title: "Tacos",
-    image: "/tacos.jpg",
+    image: "/steak-taco.jpeg",
     description:
       "Handmade tortillas, layered toppings, and standout proteins that feel vibrant, fresh, and unmistakably Buchon.",
     categoryLabel: "Signature",
@@ -179,6 +180,10 @@ export const galleryImages: Array<{
   alt: string
   category: GalleryCategory
 }> = [
+  { src: "/shrimp-fajitas.jpeg", alt: "Shrimp fajitas with poblano peppers, Oaxaca cheese, and rice", category: "Food" },
+  { src: "/steak-taco.jpeg", alt: "Steak taco with onions, salsa, and guacamole", category: "Food" },
+  { src: "/taco-guacamole.jpeg", alt: "Taco topped with guacamole and grilled onions", category: "Food" },
+  { src: "/al-pastor-taco.jpeg", alt: "Al pastor taco with pineapple and cilantro", category: "Food" },
   { src: "/el-buchon-interior-hero.jpg", alt: "Taqueria El Buchon dining room with flags and wood booths", category: "Interior" },
   { src: "/el-buchon-interior-dining.jpg", alt: "Interior dining area with warm wood tables and colorful flags", category: "Interior" },
   { src: "/el-buchon-interior-booths.jpg", alt: "Wood booths and turquoise interior wall inside Taqueria El Buchon", category: "Interior" },
@@ -210,6 +215,7 @@ export const menuCategories: MenuCategory[] = [
   "Taco Salad",
   "Sopas",
   "Quesadillas",
+  "Fajitas",
   "Tacos",
   "Drinks",
   "Desserts",
@@ -260,6 +266,11 @@ export const menuItems: MenuItem[] = [
   { category: "Quesadillas", name: "La Loca", description: "Chorizo, steak, mushroom, onion, cactus, cheese.", price: "$16" },
   { category: "Quesadillas", name: "La Flaca (veggie)", description: "Fresh spinach, mushroom, cactus, cheese.", price: "$16", tags: ["Vegetarian"] },
   { category: "Quesadillas", name: "Quesabirria", description: "Short ribs, melted chihuahua cheese, consomé on the side.", price: "$16" },
+
+  { category: "Fajitas", name: "Chicken Fajitas", description: "Served with rice, avocado, poblano peppers, onions, handmade tortillas, and Oaxaca cheese.", price: "$18" },
+  { category: "Fajitas", name: "Steak Fajitas", description: "Served with rice, avocado, poblano peppers, onions, handmade tortillas, and Oaxaca cheese.", price: "$24" },
+  { category: "Fajitas", name: "Shrimp Fajitas", description: "Served with rice, avocado, poblano peppers, onions, handmade tortillas, and Oaxaca cheese.", price: "$24" },
+  { category: "Fajitas", name: "Mixtas", description: "Choose two meats. Served with rice, avocado, poblano peppers, onions, handmade tortillas, and Oaxaca cheese.", price: "$26" },
 
   { category: "Tacos", name: "Carne Asada (Steak)", description: "Marinated skirt steak, onion, cilantro.", price: "$4.5", tags: ["Gluten-Free"] },
   { category: "Tacos", name: "Ribeye", description: "Grilled ribeye, handmade tortilla, guacamole, Oaxaca cheese, caramelized onion.", price: "$5.5" },

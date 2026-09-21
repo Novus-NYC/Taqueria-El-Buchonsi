@@ -12,6 +12,11 @@ const dietaryColors: Record<string, string> = {
   "Gluten-Free": "bg-[rgba(217,119,6,0.12)] text-[color:var(--color-orange)]",
 }
 
+const categoryImages: Partial<Record<(typeof menuCategories)[number], string>> = {
+  Fajitas: "/shrimp-fajitas.jpeg",
+  Tacos: "/steak-taco.jpeg",
+}
+
 export function MenuBrowser() {
   const [activeCategory, setActiveCategory] = useState(menuCategories[0])
   const [query, setQuery] = useState("")
@@ -106,16 +111,26 @@ export function MenuBrowser() {
       </div>
 
       <div className="grid gap-5 lg:grid-cols-2">
-        {filteredItems.map((item) => (
+        {filteredItems.map((item) => {
+          const categoryImage = categoryImages[item.category]
+
+          return (
           <article
             key={`${item.category}-${item.name}`}
             className="grid gap-5 rounded-[2rem] border border-[color:var(--color-sand-line)] bg-white p-5 shadow-[0_18px_45px_rgba(17,17,17,0.05)] sm:grid-cols-[140px_1fr]"
           >
-            <div className="flex min-h-[136px] items-end rounded-[1.5rem] bg-[linear-gradient(135deg,rgba(17,17,17,0.95),rgba(198,40,40,0.85),rgba(217,119,6,0.85))] p-4 text-white">
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.35em] text-white/65">Image Placeholder</p>
-                <p className="mt-3 font-serif-display text-2xl">{item.category}</p>
-              </div>
+            <div className="relative flex min-h-[136px] items-end overflow-hidden rounded-[1.5rem] bg-[linear-gradient(135deg,rgba(17,17,17,0.95),rgba(198,40,40,0.85),rgba(217,119,6,0.85))] p-4 text-white">
+              {categoryImage ? (
+                <Image
+                  src={categoryImage}
+                  alt=""
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, 140px"
+                />
+              ) : null}
+              <div className="absolute inset-0 bg-black/35" />
+              <p className="relative font-serif-display text-2xl">{item.category}</p>
             </div>
             <div className="flex flex-col">
               <div className="flex items-start justify-between gap-4">
@@ -149,7 +164,8 @@ export function MenuBrowser() {
               ) : null}
             </div>
           </article>
-        ))}
+          )
+        })}
       </div>
     </div>
   )
