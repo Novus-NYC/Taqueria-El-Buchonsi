@@ -1,10 +1,10 @@
 # Taqueria El Buchon — Official Website
 
-The official website for **Taqueria El Buchon**, an authentic Mexican restaurant located in Staten Island, NY. Built and maintained by [Volta NYC](https://github.com/Volta-NYC).
+The official website for **Taqueria El Buchon**, an authentic Mexican restaurant located in Staten Island, NY. Built and maintained by [Novus NYC](https://github.com/Novus-NYC).
 
 🌐 **Live site:** [taqueria-el-buchonsi.vercel.app](https://taqueria-el-buchonsi.vercel.app)
 🍽️ **Old site (reference):** [taqueriaelbuchonsi.com](https://taqueriaelbuchonsi.com)
-📦 **Generated from:** [Volta-NYC/base-repo](https://github.com/Volta-NYC/base-repo)
+📦 **Generated from:** [Novus-NYC/base-repo](https://github.com/Novus-NYC/base-repo)
 
 ---
 
@@ -87,6 +87,6 @@ Available on:
 
 ---
 
-## 🏗 Built by Volta NYC
+## 🏗 Built by Novus NYC
 
-This project was built using the [Volta NYC base template](https://github.com/Volta-NYC/base-repo). For questions about the codebase or to request changes, contact the Volta NYC team.
+This project was built using the [Novus NYC base template](https://github.com/Novus-NYC/base-repo). For questions about the codebase or to request changes, contact the Novus NYC team.
