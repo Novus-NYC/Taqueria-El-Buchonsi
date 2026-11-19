@@ -31,16 +31,16 @@ export default function AboutPage() {
           <div className="grid gap-14 lg:grid-cols-[1fr_1fr] lg:items-center">
             <div>
               <SectionHeading
-                eyebrow="The Restaurant"
-                title="Flavor-first cooking with a hospitality mindset."
-                description={`${site.story} ${site.storyExtended}`}
+                eyebrow="Our Story"
+                title="A little piece of Mexico in the heart of Staten Island."
+                description="Taqueria El Buchon was born from a deep desire to honor our roots and share the joy, pride, and unforgettable flavor of true regional Mexican cuisine with every guest."
               />
               <div className="mt-10 space-y-5 text-base leading-8 text-[color:var(--color-muted)]">
                 <p>
-                  The original restaurant messaging emphasizes authentic Mexican cuisine, fresh ingredients, and traditional recipes. This redesign carries that identity forward while presenting it through a cleaner, more premium lens.
+                  At <Link href={site.directionsUrl} target="_blank" rel="noreferrer" className="font-medium text-[color:var(--color-red)] underline underline-offset-4">841 Castleton Ave</Link>, we do more than serve food. We celebrate our culture, our people, and the memories around the table that make us feel at home.
                 </p>
                 <p>
-                  The result is a brand experience that feels more editorial and elevated without losing the warmth and vibrancy that make the restaurant approachable.
+                  Every day, we light the stoves with heart. We hand-make our tortillas, prepare sauces full of character, and bring memorable dishes to the table, from juicy birria and ribeye tacos to octopus, tongue, and Baja-style fish. Come toast, laugh, and let yourself be won over by an explosion of flavor from the first bite. At Taqueria El Buchon, you always have a home.
                 </p>
               </div>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
